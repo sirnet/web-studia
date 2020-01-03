@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Оптимальное решение</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header-page header-error">
+        <div class="header__wrap">
+            <div class="header__nav">
+                <div class="header__phone-reciver">
+                    <a href="#" class="phone-reciver">
+                        <img src="img/phone-receiver.png" alt="">
+                    </a>
+                </div>
+                <div class="header__logo">
+                    <img src="img/Логотип.png" alt="Интернет-агентство Оптимальное решение" class="logo__img">
+                  </div>
+                <input type="checkbox" id="check-menu">
+                <label for="check-menu">  
+                    <div class="burger__list">
+                        <img src="img/burger.png" alt="">
+                        <p>меню</p>
+                    </div>
+                </label>
+                <ul class="menu__list">
+                    <li class="menu__item" id="home" >
+                        <a href="/home.html" class="menu__link" >Главная</a></li>
+                    <li class="menu__item" id="company" >
+                        <a href="/uslugi.html" class="menu__link" >Услуги</a></li>
+                    <li class="menu__item" id="prise" >
+                        <a href="/portfolio.html" class="menu__link" >Портфолио</a></li>
+                    <li class="menu__item" id="info" >
+                        <a href="/company.html" class="menu__link" >О компании</a></li>
+                    <li class="menu__item" id="contact" >
+                        <a href="blog.html" class="menu__link" >Блог</a></li>
+                    <li class="menu__item" id="contact" >
+                        <a href="contact.html" class="menu__link" >Контакты</a></li>
+                </ul>
+                <div class="header__info">
+                    <a href="tel:+78129814730" class="header__phones">+7 (812) 981-47-30</a>
+                    <a href="mailto:info@ra-or.ru" class="header__mail">info@ra-or.ru</a>    
+                </div>
+                <a href="" class="hedear__phone">Перезвоните мне</a>
+                </div>
+            </div>
+            
+    </header>
+    <main class="main-page">
+        <section class="services customers">
+            <div class="wrap vacancy__wrap">
+                <h2 class="tittle vacancy">Заголовок</h2>
+                <p class="vacancy__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. 
+                    <br><br>
+                    Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+                <img src="img/customers__logo.png" alt="" class="vacancy__img">
+            </div>
+            <span class="customers__border vacancy__border"></span>
+            <div class="vacancy__content">
+                <div class="vacancy__block">
+                    <h3 class="vacancy__description">Вакансии</h3>
+                    <p class="vacancy__info">Мы растем, наш бизнес развивается, и нам постоянно 
+                        требуются новые люди, способные решать 
+                        стоящие перед компанией задачи.
+                    </p>
+                    <span class="customers__border vacancy__border"></span>
+                    <div class="vacancy__list">
+                        <p class="vacancy__item">Веб-дизайнер</p>
+                        <a href="#" class="vacancy__link" id="vacancy-link">Подробнее</a>
+                    </div>
+                    <span class="customers__border vacancy__border"></span>
+                    <div class="vacancy__list">
+                        <p class="vacancy__item">HTML-верстальщик</p>
+                        <a href="#" class="vacancy__link">Подробнее</a>
+                    </div>
+                    <span class="customers__border vacancy__border"></span>
+                    <div class="vacancy__list">
+                        <p class="vacancy__item">Специалист по внедрению 
+                            Битрикс24</p>
+                        <a href="#" class="vacancy__link">Подробнее</a>
+                    </div>
+                    <span class="customers__border vacancy__border"></span>
+                    <div class="vacancy__list">
+                        <p class="vacancy__item">PHP-программист</p>
+                        <a href="#" class="vacancy__link">Подробнее</a>
+                    </div>
+                    <span class="customers__border vacancy__border"></span>
+                    <div class="vacancy__list">
+                        <p class="vacancy__item">Менеджер по продажам</p>
+                        <a href="#" class="vacancy__link">Подробнее</a>
+                    </div>
+                    <span class="customers__border vacancy__border"></span>
+                </div>
+            </div>
+            <div class="vacancy__fon visually-hidden" id="vacancy-fon"></div>
+            <div class="vacancy__modal visually-hidden" id="vacancy-modal">
+                <button class="vacancy__btn" id="vacancy-btn"></button>
+                <h3 class="vacancy__modal-tittle">Менеджер по продажам</h3>
+                <p class="vacancy__modal-description">от 30 000 руб. до бесконечности</p>
+                <p class="vacancy__modal-text"><b class="vacancy__style">Полная занятость, полный день<br><br><br>
+                    Мы ищем в штат опытных продавцов услуг в области веб-продакшена и интернет-маркетинга и готовы предложить очень интересные финансовые условия.
+                    </b><br><br>
+                    <span>Обязанности:</span><br>
+                    - работа с входящими заявками и по "теплой" базе 
+                        клиентов;<br>
+                    - работа с заказчиками, выявление требований, 
+                    разработка presale-документации;<br>
+                    - оформление договоров, участие в подготовке 
+                    проектно-сметной документации, закрытие сделок;<br>
+                    - ведение переговоров и презентаций;<br>
+                    - участие в разработке стратегии по развитию проектов 
+                    клиентов;<br>
+                    - контроль работы проектной команды и подрядчиков 
+                    совместно с PM;<br>
+                    - самостоятельный поиск клиентов.<br><br><br>
+                    <span>Требования:</span><br>
+                    - опыт работы в продажах в IT-сфере, знание этики делового 
+                    общения, умение работать с возражениями;<br>
+                    - грамотный русский язык, умение вести деловую переписку, 
+                    презентационные и коммуникативные навыки;<br>
+                    - умение правильно расставлять приоритеты при наличии 
+                    большого кол-ва задач различного уровня сложности;<br>
+                    - знание основных продуктов и услуг digital-агентства, 
+                    знание принципов работы CMS;<br>
+                    - желание и способность учиться<br>
+                    - желание много зарабатывать<br><br><br>
+                    <span>Условия:</span><br>
+                    - Заработная плата от 30000 руб;<br>
+                    - Фиксированный 8-часовой рабочий день в офисе;<br>
+                    - Трудоустройство по ТК РФ;<br>
+                    - Дружный молодой коллектив;<br>
+                    - Возможности карьерного роста и постоянного 
+                    профессионального развития;<br>
+                    - Регулярное участие в семинарах и конференциях<br>
+                    - Большое количество интересных, амбициозных задач.<br><br><br><br>
+                    <b class="vacancy__style"><i>Присылай резюме с пометкой «Менеджер по продажам» 
+                    на почту: <a href="mailto:">ra-or.ru/mail</a>  или звони по телефону:<br>
+                    +7 (999) 999-99-99
+                    <br><br>
+                    Мы ждём!
+                    </i></b>
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-page vacancy__footer">
+        <div class="header__nav">
+            <div class="header__logo footer__logo">
+                <img src="img/Логотип.png" alt="Интернет-агентство Оптимальное решение" class="logo__img">
+            </div>
+            <div class="header__phone-reciver">
+                <p class="footer__text">©”Оптимальное решение”, 2019</p>
+            </div>
+            <input type="checkbox" id="check__menu">
+            <label for="check__menu">  
+                <div class="burger__list">
+                    <img src="img/burger.png" alt="">
+                    <p>меню</p>
+                </div>
+            </label>
+            <ul class="footer__menu">
+                <li class="menu__item" id="home" >
+                    <a href="/home.html" class="menu__link" >Главная</a></li>
+                <li class="menu__item" id="company" >
+                    <a href="/uslugi.html" class="menu__link" >Услуги</a></li>
+                <li class="menu__item" id="prise" >
+                    <a href="/portfolio.html" class="menu__link" >Портфолио</a></li>
+                <li class="menu__item" id="info" >
+                    <a href="/company.html" class="menu__link" >О компании</a></li>
+                <li class="menu__item" id="contact" >
+                    <a href="blog.html" class="menu__link" >Блог</a></li>
+                <li class="menu__item" id="contact" >
+                    <a href="contact.html" class="menu__link" >Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+<script src="js/main.js"></script>
+</body>
+</html>
