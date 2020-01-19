@@ -1,7 +1,7 @@
-vacancyModal = document.getElementById("vacancy-modal");
-vacancyBtn = document.getElementById("vacancy-btn");
-vacancyLink = document.getElementById("vacancy-link");
-vacancyFon = document.getElementById("vacancy-fon");
+var vacancyModal = document.getElementById("vacancy-modal");
+var vacancyBtn = document.getElementById("vacancy-btn");
+var vacancyLink = document.getElementById("vacancy-link");
+var vacancyFon = document.getElementById("vacancy-fon");
 
 vacancyLink.onclick = function(e){
     e.preventDefault();
@@ -15,3 +15,11 @@ vacancyBtn.onclick = function(e){
     vacancyFon.classList.add("visually-hidden");
 }
 
+
+
+var headerList = document.getElementById('header-List');
+var headerInfo = document.getElementById('header-info');
+
+headerInfo.onclick = function() {
+    headerList.classList.add("header__content-list-active");
+}

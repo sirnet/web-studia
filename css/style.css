@@ -50,7 +50,7 @@ body {
     margin: -1px; }
 
 .header-page {
-    height: 670px;
+    height: 760px;
 }
 
 .header-error {
@@ -183,10 +183,11 @@ body {
 .menu__link:active {
     color: #ffffff;
 }
-   
-.burger__list {
+
+.header__nav label{
+    box-sizing: border-box;
     margin-right: 16px;
-}   
+} 
 
 .burger__list p{
     padding: 0;
@@ -216,15 +217,15 @@ body {
     background-image: url("../img/horse.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 70% 0;
-    bottom: 448px;
+    background-position: 60% 0;
+    bottom: 378px;
     z-index: 91;
 }
 
 .logo-o {
     position: relative;
     background-image: url("../img/logo-o.png");
-    background-position: -105% 0;
+    background-position: -35% 0;
     background-repeat: no-repeat;
     height: 393px;
     bottom: 715px;
@@ -234,10 +235,10 @@ body {
 .fon-sloi {
     position: absolute;
     background-image: url("../img/fon-sloi.png");
-    height: 557px;
+    height: 389px;
     width: 100%;
-    bottom: -50px;
-    z-index: 98;
+    bottom: -2px;
+    z-index: 97;
 }
 
 .header__content {
@@ -265,30 +266,53 @@ body {
 
 .header__content__tittle {
     text-align: center;
-    width: 410px;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 500;
     margin: 0;
 }
 
 .header__content-info {
-    background-color: #fd1800;
     padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 18px;
     font-weight: 300;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.header__content-info:hover {
+    background-color: #fd1800;
+}
+
+.header__content-list {
+    display: none;
+    margin: 0;
+    padding-left: 18px;
+    line-height: 29px;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.header__content-list-active{
+    display: block;
 }
 
 .header__content-item {
     color: #fd1800;
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 25px;
 }
 
 .header__content-item span {
     color: #ffffff;
     font-weight: 300;
+    font-size: 18px;
+    margin-left: -4px;
+}
+
+.header__content-item b {
+    font-weight: 500;
 }
 
 .main-page {
@@ -409,18 +433,30 @@ section {
 }
 
 .portfolio__item:nth-child(3){
-    padding-top: 60px;
     padding-bottom: 70px;
 }
 
 .portfolio__block {
-    background-image: url("../img/sloi-2.png");
-    width: 364px;
-    height: 394px;
+    width: 320px;
+    height: 100px;
     position: relative;
     display: flex;
     justify-content: center;
 }
+
+.portfolio__block:hover {
+    height: 394px;
+    background-image: url("../img/sloi-2.png");
+}
+
+#portfolio-tl {
+    visibility: hidden;
+}
+
+.portfolio__block:hover #portfolio-tl {
+    visibility: unset;
+}
+
 
 .portfolio__text {
     margin: 0;
@@ -428,7 +464,7 @@ section {
     font-weight: 500;
     font-size: 27px;
     text-align: center;
-    padding-top: 57px;
+    padding-top: 10px;
     height: 43px;
     display: flex;
     flex-direction: column;
@@ -540,13 +576,15 @@ section {
     justify-content: center;
     width: 100%;
     padding: 0;
+    margin: 0;
 }
 
 
 .about__list {
-    padding-left: 38px;
-    padding-right: 38px;
     box-sizing: border-box;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .about__item {
@@ -566,10 +604,9 @@ section {
 }
 
 .about-img__list {
-    padding-left: 25px;
-    padding-right: 24px;
     width: 100%;
     box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
 .about-img__item {
@@ -577,17 +614,21 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 36px;
 }
 
 .about__bitrix {
+    display: none;
     padding-top: 17px;
 }
 
 .about__yandex {
+    display: none;
     padding-top: 11px;
 }
 
 .about__google {
+    display: none;
     padding-top: 19px;
 }
 
@@ -617,22 +658,33 @@ section {
     justify-content: space-between;
     list-style: none;
     padding: 0;
-    padding-left: 46px;
-    padding-right: 46px;
+    padding-left: 14px;
+    padding-right: 14px;
     box-sizing: border-box;
 }
 
 .clients__item {
     margin-bottom: 60px;
+    width: 120px;
     height: 80px;
     display: flex;
     align-items: center;
+    opacity: 0.3;
+}
+
+.clients__item img {
+    width: 100%;
+}
+
+.clients__item:hover {
+    opacity: 1;
 }
 
 .feedback__tittle {
     margin-top: 85px;
     margin-bottom: 15px;
     font-size: 27px;
+    text-align: center;
 }
 
 .feedback__text {
@@ -651,7 +703,7 @@ section {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.45);
     border: 1px solid #b4b4b4;
     border-radius: 20px;
-    width: 379px;
+    width: 90%;
     height: 32px;
     margin-bottom: 15px;
     padding-left: 19px;
@@ -2240,7 +2292,7 @@ section {
     }
 
     .header__mail::before {
-        content: url("../img/mail.png");
+        content: url("../img/email.png");
         width: 13px;
         height: 16px;
         margin-right: 5px;
@@ -2291,6 +2343,7 @@ section {
 
     .header__img-fon {
         background-image: url("../img/9-layers.png");
+        background-size: cover;
         background-position-x: center;
         background-position-y: 0;
         margin-top: 10px;
@@ -2314,7 +2367,7 @@ section {
     /* MAIN */
 
     .services {
-        margin-top: 200px;
+        margin-top: 155px;
     }
 
     .wrap {
@@ -2420,6 +2473,11 @@ section {
         width: 364px;
     }
 
+    .portfolio__block {
+        width: 360px;
+        height: 394px;
+    }
+
     .portfolio__item:nth-child(3){
         padding-top: 0;
     }
@@ -2491,6 +2549,10 @@ section {
     .about-img__item {
         padding-right: 13px;
         padding-left: 13px;
+    }
+
+    .about-img__item:nth-child(4) {
+        display: none;
     }
 
     .about__img-bitrix, 
@@ -2982,6 +3044,7 @@ section {
     margin: 0;
     margin-right: 8px;
     margin-bottom: 8px;
+    background-color: rgba(230, 230, 230, 0.8);
 }
 
 .web__item:nth-child(3){
@@ -3118,6 +3181,7 @@ section {
 
 .pers-uslugi-fon {
     background-image: url("../img/pers-uslugi.png");
+    background-size: cover;
 }
 
 .pers-uslugi-right {
