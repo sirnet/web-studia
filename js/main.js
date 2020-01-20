@@ -1,3 +1,11 @@
+
+var headerList = document.getElementById('header-List');
+var headerInfo = document.getElementById('header-info');
+
+headerInfo.onclick = function() {
+    headerList.classList.add("header__content-list-active");
+}
+
 var vacancyModal = document.getElementById("vacancy-modal");
 var vacancyBtn = document.getElementById("vacancy-btn");
 var vacancyLink = document.getElementById("vacancy-link");
@@ -13,13 +21,4 @@ vacancyBtn.onclick = function(e){
     e.preventDefault();
     vacancyModal.classList.add("visually-hidden");
     vacancyFon.classList.add("visually-hidden");
-}
-
-
-
-var headerList = document.getElementById('header-List');
-var headerInfo = document.getElementById('header-info');
-
-headerInfo.onclick = function() {
-    headerList.classList.add("header__content-list-active");
 }
