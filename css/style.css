@@ -1999,7 +1999,8 @@ section {
 .questions__info {
     margin-top: 42px;
     text-align: center;
-    width: 270px;
+    width: 285px;
+    font-size: 27px;
 }
 
 .questions__block {
@@ -2022,6 +2023,65 @@ section {
 .owl-carousel {
     display: flex;
     justify-content: center;
+}
+
+.keis__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.keis__tittle {
+    width: 100%;
+}
+
+.header__keis-content {
+    align-items: center;
+}
+
+.header__keis-tittle {
+    margin: 50px;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.keis__info {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.keis__img-fon {
+    background-image: url(../img/keis.png);
+    margin-top: 0;
+}
+
+.keis__text {
+    width: 90%;
+    text-align: center;
+}
+
+.questions__keis {
+    background: none;
+}
+
+.keis__portfolio__tittle {
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.keis__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.keis__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+    color: #ffffff;
 }
 
 @media (min-width:768px){
@@ -2193,6 +2253,7 @@ section {
 
     .pers-uslugi-dsc {
         width: 100%;
+        text-align-last: left;
     }
 
     .pers-uslugi-right {
@@ -2202,6 +2263,7 @@ section {
     .pers-uslugi__tittle {
         width: 90%;
         margin-bottom: 50px;
+        
     }
 
     .uslugi__wrap {
@@ -3240,6 +3302,7 @@ section {
 
     .pers-uslugi-left .company__text-info{
         margin-left: 0;
+        
     }
 
     .company__left-img {
@@ -3498,7 +3561,10 @@ section {
 
     .pers-uslugi-left {
         height: 330px;
-        margin: 0;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .pers-uslugi-dsc {
@@ -3575,6 +3641,14 @@ section {
         margin-bottom: 24px;
     }
 
+    .pers-uslugi-desc {
+        margin-left: 0;
+    }
+
+    .pers-uslugi-info {
+        text-align: left;
+    }
+
     .work-stages__item .pers-uslugi-cart {
         margin-right: 192px;
     }
@@ -3607,6 +3681,94 @@ section {
 
     .owl-nav {
         display: flex;
+    }
+
+    .keis__wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .keis__tittle {
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
+        font-size: 27px;
+    }
+
+    .keis__text {
+        text-align: center;
+        width: 736px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .keis__img-fon {
+        background-image: url(../img/keis.png);
+    }
+
+    .header__keis-content {
+        align-items: center;
+    }
+
+    .header__keis-tittle {
+        width: 100%;
+        text-align: center;
+        margin-top: 88px;
+        font-size: 27px;
+    }
+
+    .keis__info {
+        font-size: 14px;
+        width: 552px;
+        font-weight: 300;
+        margin: 0;
+        margin-top: 30px;
+        padding: 0;
+    }
+
+    .questions__keis {
+        background: none;
+    }
+
+    .keis__item {
+        color: #ffffff;
+    }
+
+    .keis__portfolio__tittle {
+        color: #ffffff;
+        font-size: 27px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .keis__list {
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .keis__item {
+        width: 200px;
+    }
+
+    .keis__item-tittle {
+        font-size: 20px;
+        font-weight: 400;
+        
+    }
+
+    .keis__item__text {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .keis__portfolio .wrap {
+        margin-top: 34px;
     }
 
 }
