@@ -2072,6 +2072,7 @@ section {
 .keis__list {
     list-style: none;
     margin: 0;
+    margin-bottom: 50px;
     padding: 0;
 }
 
