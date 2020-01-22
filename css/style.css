@@ -2648,17 +2648,28 @@ section {
         text-align: left;
     }
 
+    .header__content__tittle {
+        font-size: 40px;
+    }
+
     .header__content-info {
         width: 458px;
+        box-sizing: border-box;
         text-align: center;
         margin-right: 75px;
         margin-top: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 28px;
+        margin-left: 0;
+        margin-right: 114px;
+        cursor: pointer;
+        background-color: #fd1800;
     }
+
+    
 
     .header__content-list {
         width: 48.2%;
-        visibility: visible;
+       
     }
 
     .header__img-fon {
@@ -2736,6 +2747,7 @@ section {
         display: flex;
         justify-content: center;
         position: relative;
+        margin-bottom: 110px;
     }
 
     .services__item {
